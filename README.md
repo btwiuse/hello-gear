@@ -70,3 +70,10 @@ running 0 tests
 
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 ```
+
+## References
+- https://github.com/gear-dapps/hello-world
+- https://docs.gear.rs/gtest/
+  - https://docs.gear.rs/gtest/struct.System.html
+  - https://docs.gear.rs/gtest/struct.Program.html
+  - https://docs.gear.rs/gtest/struct.RunResult.html

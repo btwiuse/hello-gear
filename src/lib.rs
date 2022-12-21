@@ -21,6 +21,9 @@ fn it_works() {
 
     let program = Program::current(&system);
     init_program(&program);
+    assert_eq!(program.id(), 1.into());
+
+    assert_eq!(Program::current_with_id(&system, 2).id(), 2.into());
 
     let res = program.send_bytes(42, "foo");
     assert_eq!(res.main_failed(), false);
