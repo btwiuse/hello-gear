@@ -52,3 +52,21 @@ fn main() {
 - `./target/wasm32-unknown-unknown/release/hello_gear.meta.wasm`
   - 合约 Metadata
 
+## `cargo test`
+
+```
+$ cargo test
+    Finished test [unoptimized + debuginfo] target(s) in 0.05s
+     Running unittests src/lib.rs (target/debug/deps/hello_gear-1c94104e0f4ac509)
+
+running 1 test
+test it_works ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+   Doc-tests hello-gear
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+```
