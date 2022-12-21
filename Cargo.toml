@@ -13,3 +13,8 @@ gear-wasm-builder = { git = "https://github.com/gear-tech/gear.git", version = "
 
 [dev-dependencies]
 gtest = { git = "https://github.com/gear-tech/gear.git" }
+
+[workspace]
+members = [
+  "hello-world"
+]
