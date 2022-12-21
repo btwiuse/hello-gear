@@ -20,10 +20,18 @@ fn it_works() {
     system.init_logger();
 
     let program = Program::current(&system);
-    init_program(&program);
     assert_eq!(program.id(), 1.into());
 
-    assert_eq!(Program::current_with_id(&system, 2).id(), 2.into());
+    let program2 = Program::current(&system);
+    assert_eq!(program2.id(), 2.into());
+
+    let program3 = Program::current_with_id(&system, 3);
+    assert_eq!(program3.id(), 3.into());
+
+    let program4 = Program::current(&system);
+    assert_eq!(program4.id(), 4.into());
+
+    init_program(&program);
 
     let res = program.send_bytes(42, "foo");
     assert_eq!(res.main_failed(), false);
