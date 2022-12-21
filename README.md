@@ -73,6 +73,7 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
 ## References
 
+- https://doc.rust-lang.org/book/ch11-00-testing.html
 - https://wiki.gear-tech.io/docs/developing-contracts/testing
   - https://wiki.gear-tech.io/docs/developing-contracts/testing-gtest
   - https://wiki.gear-tech.io/docs/developing-contracts/testing-gclient
