@@ -18,4 +18,12 @@ fn hello_test() {
         .dest(hello_recipient)
         .payload(String::from("Hello"));
     assert!(res.contains(&expected_log));
+
+    // test `SendHelloReply`
+    let hello_sender: u64 = 9;
+    let res = program.send(hello_sender, InputMessages::SendHelloReply);
+    let expected_log = Log::builder()
+        .dest(hello_sender)
+        .payload(String::from("Hello"));
+    assert!(res.contains(&expected_log));
 }
