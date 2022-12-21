@@ -72,6 +72,10 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 ```
 
 ## References
+
+- https://wiki.gear-tech.io/docs/developing-contracts/testing
+  - https://wiki.gear-tech.io/docs/developing-contracts/testing-gtest
+  - https://wiki.gear-tech.io/docs/developing-contracts/testing-gclient
 - https://oneblock-gear-workshop-2022.vercel.app/#5
 - https://github.com/gear-dapps/app
 - https://github.com/gear-dapps/hello-world
