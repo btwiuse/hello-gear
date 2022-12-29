@@ -85,7 +85,8 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
   - https://docs.gear.rs/gtest/struct.Program.html
   - https://docs.gear.rs/gtest/struct.RunResult.html
 - https://github.com/btwiuse/gm
-- debug
+- Debug
+  - https://docs.gear.rs/gstd/prelude/fmt/trait.Debug.html#
   - https://docs.gear.rs/gstd/macro.debug.html
     - https://docs.gear.rs/src/gstd/macros/debug.rs.html#24-34
   - https://docs.gear.rs/gcore/ext/fn.debug.html
