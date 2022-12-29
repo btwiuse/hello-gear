@@ -31,6 +31,9 @@ extern "C" fn handle() {
     if payload.question == "life-universe-everything" {
         msg::reply(payload.answer, 0).unwrap();
     }
+    if payload.question == "debug" {
+        debug!("Note: calling debug! comsumes extra gas");
+    }
 }
 
 #[cfg(test)]
