@@ -2,16 +2,24 @@
 
 #[no_mangle]
 extern "C" fn handle() {
-    let _ = gstd::msg::load_bytes(); // read input message and do nothing
+    let msg_bytes = gstd::msg::load_bytes().unwrap(); // read input message bytes
+    gstd::debug!("handle() is being called with bytes: {:?}", msg_bytes);
     gstd::msg::reply_bytes(gstd::String::from("Hello world!"), 0).unwrap();
+}
+
+#[no_mangle]
+extern "C" fn init() {
+    let msg_bytes = gstd::msg::load_bytes().unwrap(); // read input message bytes
+    gstd::debug!("init() is being called with bytes: {:?}", msg_bytes);
 }
 
 #[cfg(test)]
 use gtest::{Program, System};
 
 #[cfg(test)]
-pub fn init_program(_prog: &Program) {
+pub fn init_program(prog: &Program) {
     // skip init
+    prog.send_bytes(0, "init");
 }
 
 #[test]
