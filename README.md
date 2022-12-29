@@ -85,3 +85,10 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
   - https://docs.gear.rs/gtest/struct.Program.html
   - https://docs.gear.rs/gtest/struct.RunResult.html
 - https://github.com/btwiuse/gm
+- debug
+  - https://docs.gear.rs/gstd/macro.debug.html
+    - https://docs.gear.rs/src/gstd/macros/debug.rs.html#24-34
+  - https://docs.gear.rs/gcore/ext/fn.debug.html
+    - https://github.com/gear-tech/gear/blob/07f831d5806b42e32769ae2ec6d27e052161bc4c/gcore/src/utils.rs#L24
+  - https://github.com/gear-tech/gear/blob/07f831d5806b42e32769ae2ec6d27e052161bc4c/utils/wasm-instrument/src/syscalls.rs#L113
+    - https://github.com/gear-tech/gear/blob/07f831d5806b42e32769ae2ec6d27e052161bc4c/core/src/costs.rs#L134
